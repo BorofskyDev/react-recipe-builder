@@ -1,7 +1,7 @@
 .recipe {
     padding: 20px;
     padding-bottom: 40px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #003566;
 }
 
 .recipe:last-child{
