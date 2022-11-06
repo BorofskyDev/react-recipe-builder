@@ -1,16 +1,9 @@
-import Ingredient from "./Ingredient"
+import Ingredient from './Ingredient'
 
 export default function IngredientList({ ingredients }) {
-    const ingredientElements = ingredients.map(ingredient => {
-        return <Ingredient
-            key={ingredient.id}
-            {...ingredient}
-        />
-    })
+  const ingredientElements = ingredients.map((ingredient) => {
+    return <Ingredient key={ingredient.id} {...ingredient} />
+  })
 
-  return (
-    <div>
-        {ingredientElements}
-    </div>
-  )
+  return <div className='ingredient-grid'>{ingredientElements}</div>
 }

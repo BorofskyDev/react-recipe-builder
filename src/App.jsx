@@ -1,5 +1,5 @@
 import RecipeList from './components/RecipeList'
-import './css/App.css'
+import './css/app.css'
 
 function App() {
   return (
