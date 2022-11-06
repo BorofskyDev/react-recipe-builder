@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { v4 as uuidv4 } from 'uuid'
+import RecipeEdit from './components/RecipeEdit'
 import RecipeList from './components/RecipeList'
 import './css/app.css'
 
@@ -15,8 +16,6 @@ function App() {
       return JSON.parse(recipeJSON)
     }
   })
-
- 
 
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(recipes))
@@ -47,6 +46,7 @@ function App() {
     <RecipeContext.Provider value={recipeContextValue}>
       <div>
         <RecipeList recipes={recipes} />
+        <RecipeEdit />
       </div>
     </RecipeContext.Provider>
   )
